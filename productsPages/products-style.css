@@ -1,0 +1,363 @@
+
+* {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0A4049;
+}
+
+:root {
+    --secondary-color: #E09453;
+}
+
+
+body {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+    color: #E09453; 
+}
+
+
+header {
+    background-color: #0a4049;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+}
+nav ul li a:hover{
+    color:#216974;
+   font-weight: bolder;
+}
+nav ul li a {
+    color: #e09453;
+    text-decoration: none;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+.products {
+    font-family: 'Merriweather', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 50px;
+}
+
+.product {
+    flex: 0 0 calc(30% - 20px); 
+    max-width: calc(50% - 20px); 
+    text-align: center; 
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.product img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    display: block; 
+    margin: 0 auto 10px; 
+}
+
+.product-info {
+    font-family: 'Merriweather', sans-serif;
+    padding: 0px;
+    text-align: center;
+}
+
+.product-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 10px; 
+    font-size: medium; 
+}
+
+ 
+.product-info .price {
+    color: var(--primary-color);
+    font-size: large; 
+    margin: 0 auto; 
+    display: block; 
+}
+
+.product-info button {
+    background-color: var(--secondary-color);
+    font-family: 'TheSeasonsBDIt', Arial, sans-serif;
+    color: white;
+    background-color: #0A4049;
+    padding: 5px 10px; 
+    margin-left: 40px;
+    border: none;
+    cursor: pointer;
+    display: inline-block; 
+    border-radius: 5px; 
+}
+
+.product-info button:hover {
+    background-color: #216974;
+    
+}
+.number {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    margin-left: 5px; 
+    width: 0.5em; 
+    padding: 0px; 
+    display: none;
+}
+
+.product-info button:hover ~ .number {
+    display: inline-block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1300px;
+    flex: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+    .cart {
+       background-color: white;
+        border-radius:10px;
+        border-style: ridge;
+        border-color: #e09453;
+        border-width: 4px;
+        font-size: smaller;
+        padding: 15px;
+        padding-top: 16px;
+        width: 35%; 
+        max-height: 430px;
+        overflow-y: auto;
+        position: relative; 
+        margin-right: 12px; 
+        box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    }
+    
+.cart a {
+        color: #0a4049; 
+        font-weight: bold;
+        font-size: 14px;
+        text-decoration: none;
+        
+    }
+
+    .cart a:hover {
+        color: #216974; 
+        font-weight: bolder;
+
+    }
+    
+
+.cart h1, .checkout h1 {
+    border-top: 1px solid #e09453;
+    padding-top: 18px;
+    margin-bottom: 10px;
+    color: #e09453;
+}
+.empty{
+    background-color: #0a4049;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    position: absolute;
+    right:50px;
+    top: 79px;
+    
+
+}
+.empty:hover{
+    background-color: #216974;
+    font-weight:bold;
+
+    
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.item {
+    display: flex;
+    padding: 20px;
+    background-color:#0a4049;
+    border-radius: 10px;
+    border-color: #0a4049;
+    color: #fff;
+    align-items: center;
+    margin-right:10px ;
+}
+.item img {
+    
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.product-name{
+    color:#E09453;
+    font-weight: bold;
+}
+.description{
+    font-style: italic;
+}
+
+
+
+
+
+.group label{
+    margin-right: 6px;
+}
+
+.summary {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 5px; 
+    font-size: 14px; 
+    margin-right: 8px;
+
+}
+
+.summary label {
+    font-weight: bold;
+    margin-left: 6px;
+}
+
+.checkoutBs{
+    margin-left: 240px;
+    color:#fff;     
+}
+
+.checkoutBs input[type="submit"],
+.checkoutBs input[type="reset"]{
+    border-radius: 4px;
+    background-color: #0a4049;
+    border:none;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    justify-content: space-between;
+    cursor: pointer;
+} 
+.checkoutBs input[type="submit"]:hover,
+.checkoutBs input[type="reset"]:hover{ 
+    background-color: #216974;
+    font-weight: bold;
+} 
+
+h1 {
+color: #53371f;
+ font-weight: bold;
+ text-align: center;
+}
+.containerp table {
+    border-collapse: collapse; 
+    width: 100%; 
+    border: transparent; 
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    }
+
+.containerp th, td {
+
+    border: transparent;
+padding: 5px;
+align-content: center; 
+    text-align: center;
+
+    }
+
+
+.containerp td { color: #0A4049;
+font-size: 14px;
+}
+.tobLeftRedius {
+    border-top-left-radius: 5px; }
+
+.tobRightRedius {
+    border-top-right-radius: 5px;}
+
+.containerp th {
+background-color: #E09453; 
+color: white;}
+
+.containerp td span{
+    font-weight: light;
+    font-size: 12px;
+    color:#216974;
+}
+.containerp tr:hover {
+background-color: #f2f2f2;
+}
+
+.action-btn {
+    font-family: 'Merriweather', sans-serif;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+    height: 27px; 
+    background-color: #0A4049;
+    margin-bottom: 5px;
+    color: white;
+    cursor: pointer;
+    width: 150px; 
+}
+.action-btn:hover {
+    background-color: #216974;
+}
+
+.containerp {
+     display: flex;
+     flex-direction: column; 
+    background-color: white;
+    padding: 30px 30%; 
+    display: flex;     
+  min-height: 100vh;
+  flex-direction: column;
+}
+    
+
+
+
+.cart-icon-container {
+    position: relative;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px; /* Adjust vertical position as needed */
+    right: -5px; /* Adjust horizontal position as needed */
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-size: 12px;
+}
