@@ -1,0 +1,201 @@
+/* Primary color */
+:root {
+  --primary-color: #0a4049;
+}
+
+/* Secondary color */
+:root {
+  --secondary-color: #e09453;
+}
+
+* {
+  font-family: "Merriweather", sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #0a4049;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #216974;
+  font-weight: bolder;
+}
+
+nav ul li a {
+  color: #e09453;
+  text-decoration: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin-right: 10px;
+  flex: 1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+.container1 {
+  width: 100%;
+  max-width: 1600px;
+  margin-right: 10px;
+  flex: 1;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: white;
+}
+
+.login-container {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 10%;
+}
+
+h2 {
+  color: #e09453;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-style: ridge;
+  border-color: #e09453;
+  border-width: 4px;
+  backdrop-filter: blur(10px);
+  flex-wrap: wrap;
+  padding: 20px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.input-group {
+  margin-bottom: 30px;
+}
+
+.input-group label {
+  color: #0a4049;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.input-group input {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-style: none;
+  border-radius: 8px;
+}
+
+.btn {
+  border: none;
+  background-color: #0a4049;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100px;
+}
+
+.btn:hover {
+  background-color: #216974;
+}
+
+.captcha-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.captcha-display {
+  margin-top: 10px;
+  box-shadow: 5px 5px 5px 5px gray;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-style: italic;
+  font-size: x-large;
+  border: 2px solid red;
+  text-decoration: line-through;
+  margin-bottom: 10%;
+}
+
+.error-message {
+  width: 100%; /* Add this line to make the error message container full width */
+  box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+  margin-bottom: 20px; /* Add some margin below the error message */
+}
+
+.error-message {
+  position: relative;
+  margin: 5px;
+  padding: 20px;
+  border: 1px solid #dc3545;
+  background-color: #f8d7da;
+  color: #721c24;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+.error-message img {
+  margin-right: 10px;
+}
+.error-message .close-button {
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #000000;
+  margin-left: auto;
+}

@@ -1,0 +1,234 @@
+* {
+    font-family: 'Merriweather', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #0A4049;
+}
+
+:root {
+    --secondary-color: #E09453;
+}
+
+
+body,html {
+   
+    margin: 0;
+    padding: 0;
+  
+}
+
+header {
+    background-color: #0a4049;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E09453; 
+}
+ 
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    flex: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: #E09453;
+    border-radius: 10px;
+    box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.1);
+    width: 540px;
+    max-height: 480px;
+    padding: 10px;
+
+}
+    
+ .feedback-form form{
+    flex-direction: column;
+    align-items: center;
+
+
+}
+h1,p{
+    margin-bottom: 10px;
+    text-align: center;
+    color:#0A4049;
+    font-weight: bold;
+}
+
+h1{
+    color: #E09453;
+}
+.group {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
+    margin-bottom: 15px;
+}
+
+.group label {
+    font-weight: bold;
+    color: #0a4049;
+    margin-right: 15px;
+    margin-left: 25px;
+    margin-top: 15px; 
+}
+
+.group textarea, 
+.group input[type="email"],
+.group input[type="text"] { 
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    box-shadow:  2px 2px 2px  2px rgba(0, 0, 0, 0.1);
+    color: #888; 
+    width: 350px;
+    margin-top: 8px;
+}
+
+.feedback-form button {
+    padding: 10px 40px; 
+    background-color: #0a4049;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin: auto; 
+    display: block;
+    color: white;
+    transform: translateX(-4%);
+
+}
+.feedback-form button:hover{
+    background-color:#216974;
+    font-weight: bolder;
+}
+.visit-us{
+    background-color:white;
+    text-align: center;
+    border-width: 4px;
+    border-style: ridge;
+    border-color: #E09453; 
+    border-radius: 10px; 
+    margin: 150px; 
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding:20px;
+    box-shadow:  5px 5px 5px  5px rgba(0, 0, 0, 0.1);
+}
+.visit-us iframe {
+    width: 80%; 
+    height: 400px; 
+    cursor: pointer;
+}
+
+.container1 {
+    width: 100%;
+    max-width: 13000px;
+    margin-right: 10px;
+    flex: 1;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+}
+
+.login-container {
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+h2{
+    color:#E09453
+}
+
+.login-container form {
+    width: 670px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border-style: ridge;
+    border-color: #E09453;
+    border-width: 4px;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+}
+
+.input-group label {
+    color:#0A4049;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.input-group input {
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 8px;
+    border-style: none;
+    border-radius: 8px;
+}
+
+.btn {
+    width: 30%;
+    padding: 10px;
+    border: none;
+    background-color: #0A4049;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #216974;
+    font-weight: bold;
+}
+

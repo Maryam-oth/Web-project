@@ -1,0 +1,255 @@
+* {
+  font-family: "Merriweather", sans-serif;
+}
+.bodyOfAdminPages {
+  margin: 0;
+  padding: 0;
+  color: #e09453; /* orange text color */
+}
+
+#adminPage-header {
+  margin: 0;
+  background-color: #0a4049; /* Green color for header background */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #e09453;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+#logOutLink {
+  color: #e09453;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#manageProductTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: transparent;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+#theadOfmanageProductTable,
+#tbodyOfmanageProductTable {
+  border: transparent;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#tbodyOfmanageProductTable {
+  color: #0a4049;
+    font-size: 13px;
+
+}
+
+#theadOfmanageProductTable {
+  background-color: #e09453;
+  color: white;
+  height: 30px;
+  font-size: 16px;
+}
+
+#LogOut-Text-Position {
+  position: relative;
+  top: 0ex;
+  right: -0.5ex;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.container-between-header-footer {
+  background-color: white;
+  align-items: center;
+  font-weight: bold;
+  padding: 50px 20% 50px 20%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#White-Container {
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#white-Container-head {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+}
+
+.sub-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e09453;
+}
+
+.searchInput-AdminPage {
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  height: 27px;
+  font-size: 16px;
+}
+
+.saveButton:hover,
+.editButton:hover,
+.deleteButton:hover,
+.BackButton:hover,
+.secondAddButton:hover {
+  background-color: #216974;
+}
+
+.secondAddButton,
+.editButton,
+.deleteButton,
+.saveButton,
+.BackButton,
+.firstAddButton {
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  height: 30px;
+  color: white;
+  font-size: 16px;
+}
+
+.secondAddButton,
+.editButton,
+.deleteButton,
+.BackButton,
+.saveButton {
+  background-color: #0a4049;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.deleteButton {
+  margin-top: 3px;
+}
+.saveButton,
+.secondAddButton {
+  margin-top: 10px;
+}
+.editButton,
+.deleteButton {
+  width: 60px; /* Adjust the width as needed */
+  margin: 2px;
+}
+
+.firstAddButton:hover {
+  background-color: #e09553b9;
+}
+
+.firstAddButton {
+  background-color: #e09453;
+}
+
+.tobLeftRedius-ProductTable {
+  border-top-left-radius: 5px;
+}
+
+.tobRightRedius-ProductTable {
+  border-top-right-radius: 5px;
+}
+
+.adminforminput {
+  height: 18px;
+  width: 23em;
+  color: #000000;
+}
+
+.adminformlabel {
+  font-weight: bold;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.adminforminput,
+.edit-Add-page-textarea {
+  border-radius: 5px;
+  border-style: none;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.adminForm {
+  display: flex;
+  flex-direction: column;
+  color: #0a4049;
+  background-color: white;
+  height: fit-content;
+  width: fit-content;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  border-color: #e09453;
+  border-style: ridge;
+  border-width: 4px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 5px;
+}
+
+.mainTitle {
+  color: #e09453;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+}
+.spanTitle {
+  color: #216974;
+  margin-right: 60px;
+}
+.pageImage-container {
+  display: flex;
+  justify-content: center;
+}
+
+#footer {
+  background-color: #0a4049;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* importent style for admin -->   box-sizing: border-box; */
+
+.p-Color {
+  color: #e09453;
+}
+
+#welcomeText {
+  /* WELCOME! admin-Name */
+  font-size: 16px;
+  margin-left: 10px;
+}
+#adminName {
+  color: #e9b383;
+}
+#admin-page-header-text {
+  /* Text: Product Management Panel */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 0px;
+}
+#admin-Header-left-containor {
+  display: flex;
+  align-items: center;
+}
